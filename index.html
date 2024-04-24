@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HLC - Ejercicio 3.3</title>
+</head>
+<body>
+    <div class = "contenedor">
+        <header><img src="./img/logo.png"></header>
+        <main>
+            <div class="linea">
+                <div class="campoI"><label for="fechaactual">FECHA ACTUAL</label></div>
+                <div class="campoD"><input type="text" id="fechaactual" placeholder="1900-01-01"></div>
+            </div>
+            <div class="linea">
+                <div class="campoI"><label for="fechanacimiento">FECHA DE NACIMIENTO</label></div>
+                <div class="campoD"><input type="text" id="fechanacimiento" placeholder="1900-01-01"></div> 
+            </div>
+            <div class="linea">
+                <div id="resultado"></div>
+            </div>
+            <!-- BOTON -->
+            <div class="linea lineaB">
+                <input type="button" id="calcular" value="Calcular">
+            </div>
+            <div class="linea">
+                <div resultado>Comprobaciones que realiza:</div>
+            </div>
+            <div class="linea">
+                <div resultado>
+                    - Los campos no quedan en blanco.<br>
+                    - La fecha introducida respeta el formato.<br>
+                    - La fecha introducida es una fecha válida.<br>
+                    - La fecha actual corresponde con la actual.<br>
+                    - La fecha de nacimiento sea anterior a la fecha actual.<br>
+                    - Se ha cumplido edad el año en curso.<br>
+                </div>
+            </div>
+        </main>
+        <footer>
+            ©2024 HLC Ejercicio 3.3 - Creado por Daniel Amores
+        </footer>
+    </div>
+</body>
+</html>
+<script src="./js/script.js"></script>
